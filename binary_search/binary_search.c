@@ -1,3 +1,5 @@
+This  Pull request resolves Issue #27
+
 #include <stdio.h>
 
 // A iterative binary search function. It returns location of x in
