@@ -1,3 +1,5 @@
+This Pull Request resolves Issue #9
+
 #include <stdio.h>
 #include <string.h>
  
