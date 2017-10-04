@@ -1,16 +1,11 @@
 #include <stdio.h>
-
 int insertionSort(int arr[], int n);
 void printArray(int arr[], int n);
-
 int main() {
-	int arr[] = {12, 11, 13, 5, 6};
+    int arr[] = {12, 11, 13, 5, 6};
     int n = sizeof(arr)/sizeof(arr[0]);
- 
     insertionSort(arr, n);
     printArray(arr, n);
- 
-    return 0;
 }
 
 void printArray(int arr[], int n)
