@@ -1,4 +1,0 @@
-Name: K Rahul Reddy
-Github Username: krahulreddy
-Degree and year: 1st year, B.tech
-Department: CSE
