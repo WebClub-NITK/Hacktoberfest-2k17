@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -27,12 +26,13 @@ int main()
     cout<<"Enter n: ";
     cin>>n;
     if(n>=2){
-    cout << "Following are the prime numbers smaller than or equal to " << n << endl;
+    cout << "Prime Numbers smaller than or equal to " << n << " are :" << endl;
     Sieve(n);
 	}
 	else
 	{
 	cout<<"No prime numbers less than or equal to "<<n<<endl;	
 	}
-    return 0;
+    cout<<endl;
+	return 0;
 }

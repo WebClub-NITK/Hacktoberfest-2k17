@@ -1,3 +1,0 @@
-name: tushar dubey
-branch:computer science
-year: 1st
