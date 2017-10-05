@@ -1,3 +1,4 @@
+//Array is assumed to be sorted in ascending order
 #include <stdio.h>
 
 // A iterative binary search function. It returns location of x in
