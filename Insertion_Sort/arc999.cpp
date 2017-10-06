@@ -13,22 +13,6 @@ int main()
         {
            cin>>a[i];
         }
-/*    for(j=1;j<n;j++)
-       {
-
-           int key =a[j];
-
-          for(i=j-1;i>=0;i--)
-            {
-                if(a[i]>key)
-                   {
-
-                        a[i+1]=a[i];
-                   }
-		else{i--;break;}
-            }
-	a[i+1]=key;
-        }*/
  
   for(j=1;j<n;j++)  
     {
