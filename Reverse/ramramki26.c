@@ -17,4 +17,5 @@ int main()
   }
   else
   cout<<"Too many characters";
-   
+  return 0;
+}  
