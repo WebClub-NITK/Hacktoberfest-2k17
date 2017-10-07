@@ -3,8 +3,8 @@ int main()
 {
  int a[20],beg,mid,end,n,i,ele,c=-1;
  cout<<"Enter number of elements"<<endl;
- 
- 
+ cin>>n;
+ cout<<"Enter the elements"<<endl;
  for(i=0;i<n;i++)
  {
   cin>>a[i];
