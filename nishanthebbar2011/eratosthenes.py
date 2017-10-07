@@ -1,4 +1,5 @@
-n=int(input())
+#Sieve of eratosthenes
+n=int(input("Please Enter the positive number up till which you want the prime numbers to printed"))
 arr=[]
 for i in range(n+1):
     arr.append(int(i))
