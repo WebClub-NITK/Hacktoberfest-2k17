@@ -1,5 +1,0 @@
-Name: Khagapati Bagh
-Github Username : radhe14341
-Degree and Year : MCA 1ST YEAR
-Department : MCS
-Interestes : Machine Learning
