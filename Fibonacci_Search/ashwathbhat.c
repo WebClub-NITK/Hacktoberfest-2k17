@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 int min(int x, int y) { return (x<=y)? x : y; }
-
 int fibMonaccianSearch(int arr[], int x, int n)
 {
-    int fibMMm2 = 0;
+    int fibMMm2 =0;
     int fibMMm1 = 1;
     int fibM = fibMMm2 + fibMMm1;
 
@@ -48,11 +46,11 @@ int fibMonaccianSearch(int arr[], int x, int n)
 
 int main(void)
 {
-    int arr[] = {10, 22, 35, 40, 45, 50, 80, 82,
+    int a[] = {10, 22, 35, 40, 45, 50, 80, 82,
                  85, 90, 100};
-    int n = sizeof(arr)/sizeof(arr[0]);
+    int n = sizeof(a)/sizeof(a[0]);
     int x = 85;
     printf("Found at index: %d",
-            fibMonaccianSearch(arr, x, n));
+            fibMonaccianSearch(a, x, n));
     return 0;
 }
