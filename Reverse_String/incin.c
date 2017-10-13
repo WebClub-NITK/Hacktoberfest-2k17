@@ -4,20 +4,20 @@
 #define MAX_STRING 256
 
 char *strrev(char *str) {
-      char *p1, *p2;
+    char *p1, *p2;
 
-      // Ensure the string exists and has data
-      if (! str || ! *str)
-            return str;
+    // Ensure the string exists and has data
+    if (! str || ! *str)
+        return str;
 
-      // Flip the characters on the ends of the string, progressing inward towards the string center
-      for (p1 = str, p2 = str + strlen(str) - 1; p2 > p1; ++p1, --p2) {
-            *p1 ^= *p2;
-            *p2 ^= *p1;
-            *p1 ^= *p2;
-      }
+    // Flip the characters on the ends of the string, progressing inward towards the string center
+    for (p1 = str, p2 = str + strlen(str) - 1; p2 > p1; ++p1, --p2) {
+        *p1 ^= *p2;
+        *p2 ^= *p1;
+        *p1 ^= *p2;
+    }
 
-      return str;
+    return str;
 }
 
 void main() { 
