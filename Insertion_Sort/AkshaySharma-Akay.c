@@ -9,13 +9,12 @@ int main()
     printf("\n Enter %d elements \n\t",n);
     for(int i=0;i<n;i++)
     {
-        printf("\n Element %d = ",i+1);
         scanf("%d",&seq[i]);
     }
     printf("\n Initial List: ");
     for(int i = 0;i<n;i++)
     {
-        printf("%d ",seq[i]);
+        printf("%d",seq[i]);
     }
 
     //Insertion Sort Algorithm
