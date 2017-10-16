@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>zerovey</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+         body{
+         background-color: #f5f5f5;
+         }
+         #ele1{
+         width:400px; !important
+         }
+         #ele:hover{
+         color: #fafafa;
+         }
+         #ele{
+         font-weight:400;
+         color:#bdbdbd;
+         }
+         #myBtn{
+         font-weight:400;
+         color:#bdbdbd;
+         }
+         #myBtn:hover{
+         color:#fafafa;
+         }
+         #tag1{
+         position:absolute;
+         top:0px;
+         left: 0px;
+         z-index: -1;
+         filter: grayscale(70%);
+         }
+         .button1{
+         background-color: transparent; 
+         color: #fafafa; 
+         border: 1px solid #fafafa;
+         border-radius: 3px; 
+         height: 30px;
+         width:80px;
+         margin-left: 120px;
+         font-family: 'Roboto',sans-serif;
+         font-weight: 400;
+         }
+         .button1:hover,.button1:focus{
+            background-color: #ffffff;
+            color:#000000;
+            outline: none;
+         }
+         #btn3{
+         background-color: transparent; 
+         color: #6a1b9a; 
+         border: 1px solid #6a1b9a;
+         border-radius: 3px; 
+         height: 30px;
+         width:80px;
+         font-family: 'Roboto',sans-serif;
+         font-weight: 400;
+         font-size: 12px;
+         }
+         #lines{
+         position: relative;
+         font-size: 30px;
+         z-index: 1;
+         overflow: hidden;
+         text-align: center;
+         top:50%;
+         }
+         #lines:before, #lines:after {
+         position: absolute;
+         top: 51%;
+         overflow: hidden;
+         width: 10%;
+         height: 1px;
+         content: '\a0';
+         background-color: #9e9e9e;
+         }
+         #lines:before {
+         margin-left: -13%;
+         text-align: right;
+         }
+         #lines:after{
+         margin-left: 2%;
+         }
+         }
+         .close {
+         position: absolute;
+         float:right;
+         top: 4px;
+         color: white !important;
+         font-weight: bold;
+         }
+         .close:hover,
+         .close:focus {
+         color: black;
+         cursor: pointer;
+         text-decoration: none;
+         }
+         #bttn1{
+         background-color: transparent; 
+         color: #9e9e9e; 
+         border: 1px solid transparent;
+         border-radius: 3px; 
+         height: 16px;
+         width:80px;
+         margin-left: 8px;
+         margin-top:13px;
+         font-family: 'Roboto',sans-serif;
+         font-weight: 500;
+         }
+         #bttn1:hover{
+         color:#ffffff;
+         }
+         #bttn2{
+         background-color: transparent; 
+         color: #9e9e9e; 
+         border: 1px solid transparent;
+         border-radius: 3px; 
+         height: 16px;
+         width:80px;
+         margin-left: 8px;
+         margin-top:13px;
+         font-family: 'Roboto',sans-serif;
+         font-weight: 500;
+         }
+         #bttn2-selected{
+         color:#ffffff;
+         }
+         #bttn1-selected{
+         color:#ffffff;
+         }
+         #bttn2:hover{
+         color:#ffffff;
+         }
+         #lines2{
+         position: relative;
+         font-size: 30px;
+         z-index: 1;
+         overflow: hidden;
+         text-align: center;
+         top:50%;
+         }
+         #lines2:before, #lines2:after {
+         position: absolute;
+         top: 51%;
+         overflow: hidden;
+         width: 10%;
+         height: 1px;
+         content: '\a0';
+         background-color: #9e9e9e;
+         }
+         #lines2:before {
+         margin-left: -13%;
+         text-align: right;
+         }
+         #lines2:after{
+         margin-left: 2%;
+         }
+         #form1{
+         display:none;
+         }
+         .modal-dialog{
+         width:530px;
+         }
+         
+   .dropbtn {
+    background-color: transparent;
+    color: #bdbdbd;
+    font-family: 'Roboto',sans-serif;
+    padding: 16px;
+    font-size: 11px;
+    font-weight:400;
+    border: none;
+    cursor: pointer;
+    border:none;
+    margin-top: 1px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    outline: none;
+    color:#fafafa;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    font-size: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+      </style>
+   </head>
+   <body>
+      <img src="frame_city.jpg" height="485" width="1365" id="tag1" style="width:100%; border="0"; alt="Null;">
+      <nav class="navbar navbar-default" style="background-color:#6a1b9a;opacity:0.9;">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#"><img src="icon4.png" style="position: absolute;top: 0px;"></a>
+            </div>
+            <form class="navbar-form navbar-left" style="font-family:'Roboto',sans-serif">
+               &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+               <div class="input-group">
+                  <input type="text" class="form-control" id="ele1" placeholder="Search Trends...">
+                  <div class="input-group-btn">
+                     <button class="btn btn-primary" type="submit" style="background-color: #9c27b0 !important">
+                     Search
+                     </button>
+                  </div>
+               </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right" style="font-family:'Roboto',sans-serif;font-size:11px">
+               <li><a href="#" id="ele">HOME</a></li>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <li><a href="#" id="ele">CONSULT</a></li>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <li><a href="#" id="ele">BLOGS</a></li>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <li><a href="#myModal" id="myBtn">LOGIN</a></li>
+            </ul>
+            <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">PRODUCTS<span class="caret"></span></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">HTML</a>
+    <a href="#about">CSS</a>
+    <a href="#contact">JAVASCRIPT</a>
+    <a href="#contact">JQUERY</a>
+  </div>
+</div>
+
+         </div>
+      </nav>
+      <div class="container" style="margin-left: 70px;margin-top: 60px;color: #bdbdbd">
+         <div id="container2" style="font-family:'Roboto',sans-serif;font-size:70px;font-weight: 500 "><b>S!</b><span style="font-family:'Roboto',sans-serif;font-weight:100;font-size: 70px"> Blog</span></div>
+         <div id="container3" style="font-family:'Roboto',sans-serif;font-size:20px;font-weight: 100;">WILL MAKE YOU</div>
+         <div id="container4" style="font-family:'Roboto',sans-serif;font-size:62px;font-weight: 500;">COOLER</div>
+         <div id="container5" style="font-family:'Roboto',sans-serif;font-size:12px;font-weight: 300">is simply dummy text of the printing and<br>
+            typesetting industry . Loren Ipsum has<br>
+            been the industry's standard dummy text<br>
+            ever since the 1500s<br>
+            <button class="button button1">Get there</button>
+         </div>
+      </div>
+      <div class="container-fluid text-center" style="margin-top:88px;">
+         <p id="lines" style="font-family:'Roboto',sans-serif;font-weight: 100;font-size: 55px;">REGISTER</p>
+      </div>
+      <br><br>
+      <div id="myModal" role="dialog" >
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color:#6a1b9a;opacity:0.9">
+               <div class="container-fluid">
+                  <button type="button" class="close" data-dismiss="modal" style="font-family:'Roboto',sans-serif;font-weight:400;font-size: 45px;">&times;</button>
+               </div>
+               <div class="modal-body" style="padding:20px 30px;">
+                  <button class="button button1" id="bttn1" style="margin-left:0px;margin-top:1px;width:13px;padding: 0px;">LOGIN</button>
+                  &nbsp;&nbsp;
+                  <span><button class="button button1" id="bttn2" style="margin-left:30px;margin-top:1px;width:60px;padding: 0px;">SIGN UP</button></span>
+                  <hr width="43%" style="margin-left: 0px;color:#9e9e9e">
+                  <br>
+                  <!--form for sign up-->
+                  <form role="form" id="form1">
+                     <div class="form-group">
+                        <label for="usrname" style="font-family: 'Roboto',sans-serif;font-weight: 300;font-size:12px;color: #e0e0e0"> Full Name</label>
+                        <input type="text" class="form-control" id="usrname" placeholder="Full Name" style="background-color:#ffffff">
+                     </div>
+                     <div class="form-group">
+                        <label for="num" style="font-family: 'Roboto',sans-serif;font-weight: 300;font-size:12px;color: #e0e0e0">Mobile Number/Email ID</label>
+                        <input type="text" class="form-control" id="num" placeholder="Mobile Number/Email ID" style="background-color:#ffffff">
+                     </div>
+                     <div class="form-group">
+                        <label for="psw" style="font-family: 'Roboto',sans-serif;font-weight: 300;font-size:12px;color: #e0e0e0">Password</label>
+                        <input type="text" class="form-control" id="psw" placeholder="Password" style="background-color:#ffffff">
+                     </div>
+                     <div class="radio">
+                        <label style="font-family: 'Roboto',sans-serif;font-weight: 300;font-size:12px;color: #e0e0e0"><input type="radio" value="">Male</label>
+                        <label style="font-family: 'Roboto',sans-serif;font-weight: 300;font-size:12px;color: #e0e0e0"><input type="radio" value="">Female</label>
+                     </div>
+                     <div class="checkbox">
+                        <label style="font-family: 'Roboto',sans-serif;font-weight:300;font-size:12px;color:#e0e0e0"><input type="checkbox" value="">Send me occasional Email Updates</label>
+                     </div>
+                     <center><button type="submit" class="btn btn-primary" style="width:138px;background-color:#64dd17">NEXT</button></center>
+                  </form>
+                  <!--form for login-->
+                  <form role="form" id="form2">
+                     <div class="form-group">
+                        <label for="usrname" style="font-family: 'Roboto',sans-serif;font-weight: 300;font-size:12px;color: #e0e0e0">User Name</label>
+                        <input type="text" class="form-control" id="usrname" placeholder="User Name" style="background-color:#ffffff">
+                     </div>
+                     <br>
+                     <div class="form-group">
+                        <label for="psw" style="font-family: 'Roboto',sans-serif;font-size:12px;font-weight: 300;color: #e0e0e0">Password</label>
+                        <input type="text" class="form-control" id="psw" placeholder="Password" style="background-color:#ffffff">
+                     </div>
+                     <div class="checkbox">
+                        <label style="color: #e0e0e0;font-family: 'Roboto',sans-serif;font-size:12px;font-weight:300"><input type="checkbox" value="">Keep me signed in</label>
+                     </div>
+                     <br>
+                     <center><button type="submit" class="btn btn-primary" style="width:138px;background-color:#64dd17">LOGIN</button></center>
+                  </form>
+                  <br><br>
+                  <div class="container-fluid" style="margin-top: 14px;">
+                     <center>
+                        <p id="lines2" style="font-size:13px;color:#e0e0e0;font-family:'Roboto',sans-serif;font-weight:300">
+                           Privacy Policy
+                        </p>
+                        <p style="font-size:10px;color:#e0e0e0;font-family:'Roboto',sans-serif;font-weight:500">By creating an account you agree to Solar's Terms of Service,Cookie Policy,<br>
+                           Privacy Policy and Content Policies.
+                        </p>
+                     </center>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br>  
+      <br><br><br>
+      <footer style="color:#ffffff;background-color: #000000;font-family: 'Roboto',sans-serif;font-weight: 300">
+         <div class="container">
+         <div class="row" style="margin-left:1%;">
+            <div class="col-xs-6">
+               <p style="margin-top: 20px;margin-left: 29px;">Contact:<br>
+                  Abhilash Neog<br>
+                  BITS Pilani, Pilani<br>
+               <a href="https://gmail.com"><i class="material-icons">email</i></a>&nbsp;&nbsp;abhineog97@gmail.com
+               </p>
+            </div>
+            <div class="col-xs-6">
+               <p style="margin-top: 20px;">Link to Github page:<br>
+                  <a href="https://github.com/abhilash97">Github:abhilash97<img src=""></a>
+               </p>
+            </div>
+         </div>
+      </footer>
+   </body>
+   <script type="text/javascript">
+      var x=document.getElementById('form1');
+      var y=document.getElementById('form2');
+      bttn1.onclick=function(){
+        x.style.display='none';
+        y.style.display='block';
+      }
+      bttn2.onclick=function(){
+        x.style.display='block';
+        y.style.display='none';
+        }
+        $(document).ready(function(){
+          $("#bttn1").click(function(){
+            $("#bttn1").css.color="#ffffff";
+          })
+        });
+        $(document).ready(function(){
+          $("#bttn2").click(function(){
+            $("#bttn2").css.color="#ffffff";
+          })
+        });
+        /*$(document).ready(function(){
+          $("#myBtn").click(function(){
+              $("#myModal").modal();
+          });
+      });*/
+        $(document).ready(function(){
+          $(".close").click(function(){
+            $(".close").css.display="none";
+          })
+        });
+       function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+   </script>
+</html>
