@@ -1,5 +1,6 @@
 
 #include<stdio.h>
+#include<conio.h>
  
 int main()
 {
@@ -8,11 +9,11 @@ int main()
     scanf("%d",&n);
     printf("Enter the array elements: ");
     
-    for(i=0;i<n;++i)
+    for(i=0;i<n;i++)
         scanf("%d",&a[i]);
         
-    for(i=1;i<n;++i)
-        for(j=0;j<(n-i);++j)
+    for(i=1;i<n;i++)
+        for(j=0;j<(n-i);j++)
             if(a[j]>a[j+1])
             {
                 temp=a[j];
@@ -21,7 +22,7 @@ int main()
             }
             
     printf("\nArray after sorting: ");
-    for(i=0;i<n;++i)
+    for(i=0;i<n;i++)
         printf("%d ",a[i]);
  
     return 0;
