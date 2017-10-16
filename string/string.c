@@ -6,7 +6,7 @@ void main()
    char str[100];
    char rev[100];
    printf("Enter a string\t");
-   scanf("%s", str);
+   scanf("%s", &str);
    printf("The original string is %s\n", str);
    for(i = 0; str[i] != '\0'; i++);
    {
