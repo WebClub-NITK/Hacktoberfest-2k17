@@ -7,21 +7,32 @@ int search(int arr[], int n, int x)
 {
     int i;
     for (i=0; i<n; i++)
+    {
         if (arr[i] == x)
          return i;
+    }
     return -1;
 }
 
 //Driver program
 int main()
 {
-	int a[]={22,34,11,56,432,44};                  //Declaring array
-	int size = sizeof(a)/sizeof(a[0]);             // finding numbers of elements in array 
+	cout<<"Enter the size of the array"<<endl;                 //Declaring array
+	int size;
+	cin>>size; 
+	for(int i=0;i<size;i++)
+	{
+            cin>>a[i];                                           //Enter the elements of array
+	}
 	//calling search function
-	int p = search(a, size,11);
+	int p = search(a, size,key);                            // key is any number that you want to search
 	if(p!=-1)
-	cout<<"Element found";
+	{
+	    cout<<"Element found";
+	}
 	else
-	cout<<"Element not found";
+	{
+	    cout<<"Element not found";
+	}
 	return 0;
 }
