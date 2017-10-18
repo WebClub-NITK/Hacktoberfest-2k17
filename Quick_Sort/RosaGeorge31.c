@@ -1,24 +1,20 @@
-#include<stdio.h>
- 
+#include<stdio.h> 
 // A utility function to swap two elements
-void swap(int* a, int* b)
-{
+
+void swap(int* a, int* b) {
     int t = *a;
     *a = *b;
     *b = t;
 }
 
-int partition (int arr[], int low, int high)
-{
+int partition (int arr[], int low, int high) {
     int pivot = arr[high];    // pivot
     int i = (low - 1);  // Index of smaller element
  
-    for (int j = low; j <= high- 1; j++)
-    {
+    for (int j = low; j <= high- 1; j++) {
         // If current element is smaller than or
         // equal to pivot
-        if (arr[j] <= pivot)
-        {
+        if (arr[j] <= pivot) {
             i++;    // increment index of smaller element
             swap(&arr[i], &arr[j]);
         }
@@ -27,11 +23,8 @@ int partition (int arr[], int low, int high)
     return (i + 1);
 }
  
-
-void quickSort(int arr[], int low, int high)
-{
-    if (low < high)
-    {
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
         
         int pi = partition(arr, low, high);
         quickSort(arr, low, pi - 1);
@@ -40,17 +33,14 @@ void quickSort(int arr[], int low, int high)
 }
  
 /* Function to print an array */
-void printArray(int arr[], int size)
-{
+void printArray(int arr[], int size) {
     int i;
     for (i=0; i < size; i++)
         printf("%d ", arr[i]);
     printf("n");
 }
  
-
-int main()
-{
+int main() {
     int arr[] = {10, 8, 9, 1, 5};
     int n = sizeof(arr)/sizeof(arr[0]);
     quickSort(arr, 0, n-1);
