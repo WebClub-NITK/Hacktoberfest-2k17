@@ -1,0 +1,4 @@
+Name: Leonardo Bonetti.
+Github Username: LeonardoBonetti.
+Degree: I'm coursing Degree in Analisys and sistem development.
+About me: I'm from Brazil, i'm 19 years old and i like so much c# language, now i'm work with C#, Javascript, HTML, CSS and others frameworks.
