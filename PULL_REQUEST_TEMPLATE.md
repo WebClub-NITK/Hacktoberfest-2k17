@@ -1,4 +1,4 @@
-This Pull Request resolves Issue #9
+This Pull Request resolves Issue #<IssueNumber>
 
 Description:
 In this Pull Request we have done the following additions/edits for the code:
