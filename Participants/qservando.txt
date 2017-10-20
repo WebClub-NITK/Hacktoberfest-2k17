@@ -4,4 +4,3 @@ Degree and Year: 2nd year, IS
 Department: Information Systems
 
 Interests: Coding and Open source.
- 
