@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>s
-int arr[]= {3,2,1};
+
 
 
 
@@ -10,13 +10,14 @@ void mergesort(int[]);
 int main()
 {
 	int n,i;
-	// printf("Enter the number of elements in the array\n");
-	// scanf("%d", &n);
-	// printf("Enter the elements\n");
-	// for(i=0;i<n;i++)
-	// {
-	// 	scanf("%d", &arr[i]);
-	// }
+	printf("Enter the number of elements in the array\n");
+	scanf("%d", &n);
+	int * arr = (int*)malloc(n*sizeof(int));
+	printf("Enter the elements\n");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d", &arr[i]);
+	}
 	arr[i]='\0';
 	mergesort(arr);
 	for(i=0;i<n;i++)
