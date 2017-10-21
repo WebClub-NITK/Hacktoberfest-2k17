@@ -1,6 +1,0 @@
-Name: Nishant Kumar
-Github username: NishantKr97
-Degree and Year: B.Tech 2nd yr
-Department: Information Technology
-
-Interests: Android
