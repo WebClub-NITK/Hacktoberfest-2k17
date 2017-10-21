@@ -50,6 +50,8 @@ int compareNumString(string first, string second){
 
 int main(){
 	string first, second;
-	cin >> first >> second;
-	cout << compareNumString(first, second) << endl;
+	gets(first);
+	gets(second);
+	cout<<compareNumString(first, second)<<endl;
+return 0;
 }
