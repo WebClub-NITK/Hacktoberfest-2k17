@@ -1,0 +1,5 @@
+Name: Udit Mittal
+Bio: Computer Science Major
+GitHub: https://github.com/udit-001/
+
+Interests: Loves Programming and watching Mr.Robot
