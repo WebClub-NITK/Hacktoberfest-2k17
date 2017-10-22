@@ -6,27 +6,24 @@ using namespace std;
 /*
  * Input: two numeric string without leading zeros
  * Output:  1 first string represent bigger number
- 		    2 second string represents bigger number
-			0 both represent same number
-		   -1 input error
-*/
+ *		    2 second string represents bigger number
+ *			0 both represent same number
+ *		   -1 input error
+ */
 
 int compareNumString(string first, string second){
 
 	int firstSize = first.size();
 	int secondSize = second.size();
 
-	if(first.empty() && second.empty()){
+	if(first.empty() && second.empty())
 		return 0;
-	}
 
-	if(firstSize > secondSize){
+	if(firstSize > secondSize)
 		return 1;
-	}
 
-	if(firstSize < secondSize){
+	if(firstSize < secondSize)
 		return 2;
-	}
 
 	if(firstSize == secondSize){
 		for(int i = 0; i < firstSize; i++){
