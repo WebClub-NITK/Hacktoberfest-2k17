@@ -28,6 +28,7 @@ public class Prajnaaa12
      else
        low=mid+1;
      }
+    System.out.println("Key not found!");
    }
  }
        
