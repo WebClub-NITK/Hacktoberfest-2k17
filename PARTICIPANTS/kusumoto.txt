@@ -1,1 +1,5 @@
-for Hacktoberfest 2017
+Name: Weerayut Hongsa
+GitHub Username: kusumoto
+Degree: B.S. 
+Department: Software Engineering
+Interests: Devops, C#, Automation
