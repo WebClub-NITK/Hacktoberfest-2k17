@@ -1,0 +1,6 @@
+Name: Judar Lima
+Github Username: judarlima
+Degree and Year: B. System analysis, 4th Year
+Department: Information Technology
+
+Interests: Music, Functional Programming, Reactive Programming, Jiu-jitsu.
