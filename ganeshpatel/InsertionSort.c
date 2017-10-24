@@ -5,7 +5,7 @@ int main()
     int n;
     printf("Enter value of n = ");
     scanf("%d",&n);
-    int seq[n];
+    int *seq=(int *)malloc(n*sizeof(int));
     printf("\n Enter %d elements \n\t",n);
     for(int i=0;i<n;i++)
     {
