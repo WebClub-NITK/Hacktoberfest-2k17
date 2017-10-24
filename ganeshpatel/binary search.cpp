@@ -10,7 +10,7 @@ int main()
 		cin>>n;
 		int ub=n;
 		int mid;
-		int a[100];
+		int *a=(int *)malloc(n*sizeof(int));
 		cout<<"Enter the elements : ";
 		for(int i=0;i<n;i++)
             cin>>a[i];
