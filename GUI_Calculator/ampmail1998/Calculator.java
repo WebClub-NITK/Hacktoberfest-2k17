@@ -12,7 +12,6 @@ public class Calculator{
     JTextField output, oa, op;
     JButton n0, n1, n2, n3, n4, n5, n6, n7, n8, n9, point, equal, add, sub, pro, div, clear, neg, per;
     int zero = 0;
-
     Calculator(){
         jf= new JFrame("CALCULATOR");
         jf.setSize(500, 500);
