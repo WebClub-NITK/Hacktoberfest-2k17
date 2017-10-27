@@ -142,3 +142,4 @@ void delete()
  free(x);
  }
 }
+//you can do that guide thanks for your attention
