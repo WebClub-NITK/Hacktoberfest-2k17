@@ -1,0 +1,6 @@
+To print output or something in c we use printf syntax.
+code :-
+#include<stdio.h>
+int main() {
+printf("Hello World\n");
+}
