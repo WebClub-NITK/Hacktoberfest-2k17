@@ -11,13 +11,21 @@ void swap(int *xp, int *yp)
 // A function to implement bubble sort
 void bubbleSort(int arr[], int n)
 {
-   int i, j;
-   for (i = 0; i < n-1; i++)      
- 
-       // Last i elements are already in place   
-       for (j = 0; j < n-i-1; j++) 
-           if (arr[j] > arr[j+1])
-              swap(&arr[j], &arr[j+1]);
+   int i, swapped;
+   
+   swapped = 1;
+   while (swapped)
+   {
+      swapped = 0;
+      for (i = 0; i < n - 1; i++)
+      {
+          if (arr[i] > arr[i + 1])
+          {
+              swap(&arr[i], &arr[i + 1]);
+              swapped = 1;
+          }
+      }          
+   }
 }
  
 /* Function to print an array */
@@ -26,7 +34,7 @@ void printArray(int arr[], int size)
     int i;
     for (i=0; i < size; i++)
         printf("%d ", arr[i]);
-    printf("n");
+    printf("\n");
 }
  
 // Driver program to test above functions
