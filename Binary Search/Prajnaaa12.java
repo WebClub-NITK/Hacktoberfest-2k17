@@ -18,7 +18,7 @@ public class Prajnaaa12
     while(low<=high)
     {
      mid=(low+high)/2;
-     if(key==mid)
+     if(key==left)
      {
        System.out.println(key+" found at position "+ (mid+1));
        break;
