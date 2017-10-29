@@ -1,0 +1,5 @@
+Name: Weerayut Hongsa
+GitHub Username: kusumoto
+Degree: B.S. 
+Department: Software Engineering
+Interests: Devops, C#, Automation
