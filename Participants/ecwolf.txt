@@ -1,0 +1,6 @@
+Name: Fabricio Rodriguez
+GitHub Username: ecwolf
+Degree and Year: MSc. 2017
+Department: Networking
+
+Interests: SDN, NFV, IPv6

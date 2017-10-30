@@ -16,7 +16,12 @@ int search(int a[], int key, int size) {
 }
 
 int main() {
-	int arr[] = {1,2,3,4,5};
+	int n;
+	printf("Enter the number of elements:");
+	scanf("%d",&n);
+	int *arr=(int *)malloc(n*sizeof(int));
+	for(int i=0;i<n;i++)
+		scanf("%d",&arr[i]);
 	printf("Enter the key to be found\n");
 	int key;
 	scanf("%d", &key);
