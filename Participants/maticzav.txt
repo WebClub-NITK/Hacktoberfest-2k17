@@ -1,3 +1,0 @@
-Name: Matic Zavadlal
-GitHub: maticzav
-Interests: Physics, Programming, CS, Elm, JS, Thinking about concepts

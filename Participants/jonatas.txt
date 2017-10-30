@@ -1,3 +1,0 @@
-Name: Jonatas Alves
-Github: jonatasfalves
-Course: Computer Eng.

@@ -1,5 +1,0 @@
-Name: Darren Charles Fernandes
-GitHub Username: itsdarren007
-Degree and Year: 1st Year, B. Tech
-Department: Mechanical
-Interests: Robotics
