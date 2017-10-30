@@ -1,0 +1,18 @@
+They are the type of logic operators such as and , or , not , xor ,etc.
+1. NOT operator = 
+   it reverses its value.
+   ex. 1 = 0 and 0 = 1
+2. AND operator = 
+   it gives true value only when both the values are true otherwise it will return false value.
+   (it is product of two condition)
+   1 1 = 1
+   1 0 = 0
+   0 0 = 0
+   0 1 = 0
+3. OR operator = 
+   it gives true value even if any one condition is true.
+   (it is a sum of two conditions)
+   1 1 = 1
+   1 0 = 1
+   0 1 = 1
+   0 0 = 0
