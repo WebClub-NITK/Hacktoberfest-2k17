@@ -6,10 +6,12 @@ int main(int ante)
    float c, first, last, middle, n, search, array[100];
  
       scanf("%f",&n);
-    for (c = 0; c < n; c++)
+ 
+   for (c = 0; c < n; c++)
       scanf("%f",&array[c]);
  
-      scanf("%d", &search);
+   printf("Enter value to find\n");
+   scanf("%d", &search);
  
    first = 0;
    last = n - 1;
