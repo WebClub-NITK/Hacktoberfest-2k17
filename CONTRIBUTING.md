@@ -25,10 +25,14 @@ Fill in your details there and save the file! Make sure you save it in the Parti
 Add the following commands on Git Bash or Git whichever you are using.
 
 ## Send a Pull Request
-![hack7](https://user-images.githubusercontent.com/16410361/30947333-d403a45c-a426-11e7-888c-43b82180c715.png)
+!t
+hackt
+](https://user-images.githubusercontent.com/16410361/30947333-d403a45c-a426-11e7-888c-43b82180c715.png)
 
 ![hack8](https://user-images.githubusercontent.com/16410361/30947389-1e18b2d0-a427-11e7-9441-9e585c174b43.png)
 
 Find more Issues on the Wiki and happy hacking this Hacktoberfest!
 
+t
+:q
 
