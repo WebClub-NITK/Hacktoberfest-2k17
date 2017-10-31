@@ -1,16 +1,17 @@
 #include <stdio.h>
+#include<stdlib.h>
  
-int main()
+int main(int ante)
 {
-   int c, first, last, middle, n, search, array[100];
+   float c, first, last, middle, n, search, array[100];
  
    printf("Enter number of elements\n");
-   scanf("%d",&n);
+   scanf("%f",&n);
  
-   printf("Enter %d integers\n", n);
+   printf("Enter %f integers\n", n);
  
    for (c = 0; c < n; c++)
-      scanf("%d",&array[c]);
+      scanf("%f",&array[c]);
  
    printf("Enter value to find\n");
    scanf("%d", &search);
@@ -23,7 +24,7 @@ int main()
       if (array[middle] < search)
          first = middle + 1;    
       else if (array[middle] == search) {
-         printf("%d found at location %d.\n", search, middle+1);
+         printf("%f found at location %f.\n", search, middle+1);
          break;
       }
       else
@@ -32,7 +33,7 @@ int main()
       middle = (first + last)/2;
    }
    if (first > last)
-      printf("Not found! %d is not present in the list.\n", search);
+      printf("Not found! %f is not present in the list.\n", search);
  
    return 0;   
 }
