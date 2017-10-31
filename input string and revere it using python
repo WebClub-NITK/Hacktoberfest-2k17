@@ -1,0 +1,6 @@
+code :-
+x = "Hello"                          #string is inputed here
+x[::-1]                              #syntax to reverse it. after pressing enter the string is reversed.
+
+output :-
+'olleh'
