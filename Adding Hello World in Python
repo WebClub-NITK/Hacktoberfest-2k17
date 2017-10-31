@@ -1,0 +1,3 @@
+To print Hello World in python 2 we just simply writ print and then argument inside double quotes("")
+code :-
+print "Hello World"
