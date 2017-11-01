@@ -1,0 +1,7 @@
+Name: Kevin Madison
+Github username: kevinlmadison
+Degree and Year: 1st Year, Masters 
+Department: Computer Engineering
+
+Interests: Hacktoberfest T-Shirts
+
