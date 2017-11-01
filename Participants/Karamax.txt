@@ -1,0 +1,6 @@
+Name:Alex Karamax
+Github username: Karamax
+Degree and year: 2st Kotlin
+Department: Information Technology
+
+Interests:Play games and coding.

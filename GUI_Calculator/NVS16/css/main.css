@@ -1,0 +1,39 @@
+.container {
+    margin : 100px;
+}
+
+#display{
+    height : 80px;
+    width : 250px; 
+    background : #eee;
+    margin : 50px;
+}
+
+
+button {
+    width : 50px;
+    height : 50px;
+}
+
+table {
+    height : 400px;
+    width : 300px;
+    box-shadow : 2px 3px 15px #ccc;
+    border : 1px solid #ccc;
+    font-family: 'Righteous', cursive;
+}
+
+tr{
+    border-top : none;
+}
+
+#header{
+    font-family: 'Lobster', cursive;
+    font-size : 30px; 
+    color : #00aced
+;
+}
+
+#footer{
+    font-family: 'Comfortaa', cursive;
+}

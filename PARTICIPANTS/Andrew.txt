@@ -1,0 +1,5 @@
+Name: Andrew Tang
+GitHub Username: tangandrew
+Degree and Year: 1st year, CS
+Department: Computer Science
+Interests: Coding and artificial intelligence
