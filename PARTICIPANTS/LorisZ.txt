@@ -1,3 +1,0 @@
-Name: Loris
-Github Username: LorisZ
-

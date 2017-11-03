@@ -1,6 +1,0 @@
-Name: Brad
-GitHub Username: bradleyJohnson55
-Degree and Year: 2nd year, CompSci
-Department: Computer Science
-
-Interests: learning programming, GoT, outdoors

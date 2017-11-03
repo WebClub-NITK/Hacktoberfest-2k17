@@ -1,6 +1,0 @@
-Name: Ankit Jena
-GitHub Username: ankitjena
-Degree and Year: 2nd Year, B. Tech
-Department: Computer Science and Engineering
-
-Interests: Algorithms and Counter Strike
