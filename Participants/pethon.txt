@@ -1,0 +1,5 @@
+Name: pethon
+Github Username : pethon
+Degree and Year : CIT - 1Year
+Department : Advanced Robotics
+Interests: ML(DL, RL)
