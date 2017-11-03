@@ -1,0 +1,3 @@
+to print Hello World using Ruby we have to follow this code :-
+puts 'Hello World'
+and your Hello World gets printed on terminal
