@@ -1,10 +1,10 @@
-# Hacktoberfest-2k17
+# Hacktoberfest-2k18
  1 
-Official Repository for Hacktoberfest 2k17 NITK Edition meetup conducted at NITK Surathkal in collaboration with Team Engineer.
+Official Repository for Hacktoberfest 2k18 NITK Edition meetup conducted at NITK Surathkal in collaboration with Team Engineer.
 
 ## CONTRIBUTING
 
-* This repository is for the NITK Hacktoberfest Meetup for the year 2k17. It's basic aim is to get people started with Open Source Contribution. 
+* This repository is for the NITK Hacktoberfest Meetup for the year 2k18. It's basic aim is to get people started with Open Source Contribution. 
 * To get started take a look at our [CONTRIBUTING doc](CONTRIBUTING.md) for more information.
 
 ## License
