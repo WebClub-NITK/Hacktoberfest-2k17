@@ -10,28 +10,33 @@ int main() {
 
     printf("Enter two operands: ");
     scanf("%lf %lf",&firstNumber, &secondNumber);
+    
+    if(operator=='/'&&secondNumber==0)
+        printf("Not defined");         //dividing by zero exception
+    
+    else{
+        switch(operator)
+        {
+            case '+':
+                printf("%.1lf + %.1lf = %.1lf",firstNumber, secondNumber, firstNumber + secondNumber);
+                break;
 
-    switch(operator)
-    {
-        case '+':
-            printf("%.1lf + %.1lf = %.1lf",firstNumber, secondNumber, firstNumber + secondNumber);
-            break;
+            case '-':
+                printf("%.1lf - %.1lf = %.1lf",firstNumber, secondNumber, firstNumber - secondNumber);
+                break;
 
-        case '-':
-            printf("%.1lf - %.1lf = %.1lf",firstNumber, secondNumber, firstNumber - secondNumber);
-            break;
+            case '*':
+                printf("%.1lf * %.1lf = %.1lf",firstNumber, secondNumber, firstNumber * secondNumber);
+                break;
 
-        case '*':
-            printf("%.1lf * %.1lf = %.1lf",firstNumber, secondNumber, firstNumber * secondNumber);
-            break;
+            case '/':
+                printf("%.1lf / %.1lf = %.1lf",firstNumber, secondNumber, firstNumber / secondNumber);
+                break;
 
-        case '/':
-            printf("%.1lf / %.1lf = %.1lf",firstNumber, secondNumber, firstNumber / secondNumber);
-            break;
-
-        // operator doesn't match any case constant (+, -, *, /)
-        default:
-            printf("Error! operator is not correct");
+            // operator doesn't match any case constant (+, -, *, /)
+            default:
+                printf("Error! operator is not correct");
+        }
     }
     
     return 0;
