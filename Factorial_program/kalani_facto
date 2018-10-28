@@ -10,6 +10,9 @@ int main()
   
     if (n < 0)
         printf("Error! Factorial of a negative number doesn't exist.");
+        
+    else if(n==0)
+        printf("Factorial of 0 = 1");
 
     else
     {
