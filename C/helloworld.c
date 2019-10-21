@@ -1,5 +1,6 @@
 #include<stdio.h>
 main()
 {
-  printf("Hello World");
+  printf("Hello friends");
+  printf("\nwelcome to hacktoberfrst");//add new message
 }
